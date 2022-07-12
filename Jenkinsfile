@@ -8,7 +8,7 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
-                stage('DeployToStaging') {
+        stage('DeployToStaging') {
             when {
                 branch 'master'
             }
@@ -72,3 +72,5 @@ pipeline {
         }
     }
 }
+Footer
+© 2022 GitHub, Inc.
